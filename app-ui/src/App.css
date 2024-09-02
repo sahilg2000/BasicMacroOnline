@@ -1,0 +1,178 @@
+body {
+  background-color: rgb(0, 10, 10) !important;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: black;
+  padding: 3px
+}
+
+header{
+  color: rgb(42, 179, 179);
+  text-align: center;
+  font-size: 10px;
+}
+
+footer{
+  color: rgb(244, 0, 0);
+  text-align: center;
+  padding-top: 50px;
+}
+
+.App-header {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: rgb(20, 163, 163);
+}
+
+.NavBar {
+  list-style-type: none;
+  text-align: center;
+  margin-right: 0.5%;
+}
+
+table {
+  border-spacing: 0;
+  border-radius: 10px;
+  border-collapse: collapse;
+  color: rgb(198, 203, 255);
+}
+
+table th:last-child{
+  border-top-right-radius: 10px;
+}
+
+table th:first-child{
+  border-top-left-radius: 10px;
+}
+
+table th:not(:last-child),
+table td:not(:last-child) {
+ border-right: 1px solid rgb(0, 26, 46);
+}
+
+tr:nth-child(even){
+  background-color: rgb(0, 26, 46);
+  border-radius: 10px;
+}
+
+
+tbody tr:hover {
+  border-radius: 10px;
+  background-color: rgba(0, 13, 126, 0.806);
+  color: white;
+}
+
+th {
+  padding: 12px;
+  text-align: center;
+  background-color: rgb(35, 45, 83);
+  color: rgb(12, 27, 186);
+}
+
+td {
+  padding: 12px;
+  text-align: center;
+}
+
+#changebutton{
+  background-color: rgb(0, 184, 3);
+  margin: auto;
+  margin-top: 10px;
+  padding: 10px;
+}
+
+.Link {
+  margin-top: 12px;
+  text-align: center;
+  color:  rgb(1, 164, 164);
+  background-color: transparent;
+  text-decoration: rgb(63, 174, 174) underline;
+}
+
+.Link:visited {
+  color:  rgb(165, 186, 45);
+  text-decoration: rgb(165, 186, 45) underline;
+  background-color: transparent;
+}
+
+td:nth-child(6){
+  color: rgb(42, 142, 33);
+}
+
+td:last-child{
+  color: rgb(147, 0, 2);
+}
+
+
+
+input{
+    margin: 20%;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    text-align: center;
+    background-color: rgb(133, 199, 199);
+    color: black;
+}
+
+p {
+  width: 300px;
+  margin-top: 10%;
+/*  padding: 5px 15px 5px 15px;
+  border-style: solid;
+  border-radius: 50px;
+  border-color: rgb(180, 164, 39);
+*/}
+
+
+.total{
+  color: white;
+}
+
+.progress{
+  border: 5px red;
+  height: 50px !important;
+  width: 40%;
+}
+
+#savedmacros{
+  color: rgb(161, 170, 57);
+}
+
+#savedmacros th:not(:last-child),
+#savedmacros td:not(:last-child) {
+ border-right: 1px solid rgb(0, 40, 40);
+}
+
+#savedmacros tr:nth-child(even){
+  background-color: rgb(36, 46, 0);
+  border-radius: 10px;
+}
+
+
+#savedmacros tbody tr:hover {
+  border-radius: 10px;
+  background-color: rgb(152, 144, 0);
+  color: white;
+}
+
+#savedmacros th {
+  padding: 12px;
+  text-align: center;
+  background-color: rgb(76, 83, 35);
+  color: rgb(174, 186, 12);
+}
+
+#savedmacros td {
+  padding: 12px;
+  text-align: center;
+}
+
+#changemax{
+  margin: 12px;
+  text-align: center;
+  background-color: rgb(1, 164, 164);
+}

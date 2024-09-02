@@ -1,0 +1,67 @@
+### Request 2.1: Create another macro
+POST http://localhost:5000/savedmacros HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Bars",
+    "weight": 14,
+    "carbs": 5,
+    "fats": 5,
+    "proteins": 1
+}
+
+### Request 2.2: Create another macro
+POST http://localhost:5000/savedmacros HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Mars Bars",
+    "weight": 11,
+    "carbs": 2,
+    "fats": 1,
+    "proteins": 1
+}
+
+### Request 2.3: Create another macro
+POST http://localhost:5000/macros HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Cookie",
+    "weight": 14,
+    "carbs": 5,
+    "fats": 5,
+    "proteins": 1
+}
+
+### Request 3: Retrieve all should return the 2 macros we just created
+GET http://localhost:5000/bar HTTP/1.1
+
+### Request 4: Retrieve by ID should return the Deadlift exercise
+### Note: Update the value of _id in the following URL to what was assigned to the Deadlift
+GET http://localhost:5000/bar/ HTTP/1.1
+
+
+###Request 5: Edit the macros. 
+### Note: Update the value of _id in the following URL to what was assigned to the current food
+PUT http://localhost:5000/macros/654b944198ffee7987c4a0e8/ HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Cookie",
+    "weight": 14,
+    "carbs": 5,
+    "fats": 5,
+    "proteins": 1
+}
+
+### Request 6: Verify that reps value for Deadlift is now 12
+GET http://localhost:5000/savedmacros?name=Cookie HTTP/1.1
+
+
+### Request 7: Delete the Deadlift
+### Note: Update the value of _id in the following URL to what was assigned to the Deadlift
+DELETE http://localhost:5000/macros/654b944198ffee7987c4a0e8/ HTTP/1.1
+
+### Request 8: Verify that the Deadlift exercise has been deleted
+GET http://localhost:5000/macros HTTP/1.1
